@@ -1,0 +1,194 @@
+{
+  "brikId": "",
+  "brikName": "",
+  "editorId": "",
+  "version": "*",
+  "editable": true,
+  "style": {
+    "font": {
+      "family": "",
+      "size": "",
+      "style": "",
+      "color": "",
+      "weight": ""
+    },
+    "backgroundColor": "",
+    "color": ""
+  },
+  "data": [
+    {
+      "content": {
+        "value": "",
+        "label": "Background Image",
+        "type": "img",
+        "for": "background",
+        "src":"https://cdn.pixabay.com/photo/2015/12/01/15/43/black-1072366_1280.jpg",
+        "link": ""
+      },
+      "style": {
+        "font": {
+          "family": "",
+          "size": "",
+          "style": "",
+          "color": "",
+          "weight": ""
+        },
+        "backgroundColor": ""
+      },
+      "editable": true,
+      "display": "block"
+    },
+    {
+      "content": {
+        "value": "value has mixed support, consider using flex-end",
+        "label": "Main Title",
+        "type": "title",
+        "for": "mainTitle",
+        "link": ""
+      },
+      "style": {
+        "font": {
+          "family": "",
+          "size": "45",
+          "style": "",
+          "color": "white",
+          "weight": "900"
+        },
+        "backgroundColor": ""
+      },
+      "editable": true,
+      "display": "block"
+    },
+    {
+      "content": {
+        "value": "JavaScript waits for the load event to occur (meaning the page and its resources have finished loading)",
+        "label": "SubText",
+        "type": "subtext",
+        "for": "subText",
+        "link": ""
+      },
+      "style": {
+        "font": {
+          "family": "",
+          "size": "20",
+          "style": "",
+          "color": "white",
+          "weight": ""
+        },
+        "backgroundColor": ""
+      },
+      "editable": true,
+      "display": "block"
+    },
+    {
+      "content": {
+        "value": "Get Started",
+        "label": "Button",
+        "type": "button",
+        "for": "button",
+        "link": ""
+      },
+      "style": {
+        "font": {
+          "family": "",
+          "size": "",
+          "style": "",
+          "color": "",
+          "weight": ""
+        },
+        "backgroundColor": "",
+        "radius":""
+      },
+      "editable": true,
+      "display": "block"
+    },
+    {
+      "content": {
+        "value": "",
+        "label": "Image Top Left",
+        "type": "img",
+        "for": "imageTopLeft",
+        "src":"https://media.istockphoto.com/id/1174652880/photo/surveillance-street-camera-in-city-and-icons.jpg?s=1024x1024&w=is&k=20&c=NIoWuKiJ9uy6LxhJxegeiFC8XLZ9QGbJuePLBjkf_sc=",
+        "link": ""
+      },
+      "style": {
+        "font": {
+          "family": "",
+          "size": "",
+          "style": "",
+          "color": "",
+          "weight": ""
+        },
+        "backgroundColor": ""
+      },
+      "editable": true,
+      "display": "block"
+    },
+    {
+      "content": {
+        "value": "",
+        "label": "Image Top Right",
+        "type": "img",
+        "for": "imageTopRight",
+        "src":"https://media.istockphoto.com/id/858053178/photo/digital-electronic-components-circuit-boards-technology-era-india-map.jpg?s=1024x1024&w=is&k=20&c=CJsECmaaba-eCbVoU56S2Gc5o-FjDgNHmIH1x0ld-FQ=",
+        "link": ""
+      },
+      "style": {
+        "font": {
+          "family": "",
+          "size": "",
+          "style": "",
+          "color": "",
+          "weight": ""
+        },
+        "backgroundColor": ""
+      },
+      "editable": true,
+      "display": "block"
+    },
+    {
+      "content": {
+        "value": "",
+        "label": "Image Bottom Left",
+        "type": "img",
+        "for": "imageBottomLeft",
+        "src":"https://media.istockphoto.com/id/594907500/photo/closeup-electronic-circuit-board.jpg?s=1024x1024&w=is&k=20&c=SalLf3JNZGRpEjmGP2trRNU9jpWemN45soqgnJWynHU=",
+        "link": ""
+      },
+      "style": {
+        "font": {
+          "family": "",
+          "size": "",
+          "style": "",
+          "color": "",
+          "weight": ""
+        },
+        "backgroundColor": ""
+      },
+      "editable": true,
+      "display": "block"
+    },
+    {
+      "content": {
+        "value": "",
+        "label": "Image Bottom Right",
+        "type": "img",
+        "for": "imageBottomRight",
+        "src":"https://cdn.pixabay.com/photo/2020/04/08/16/32/keyboard-5017973_640.jpg",
+        "link": ""
+      },
+      "style": {
+        "font": {
+          "family": "",
+          "size": "",
+          "style": "",
+          "color": "",
+          "weight": ""
+        },
+        "backgroundColor": ""
+      },
+      "editable": true,
+      "display": "block"
+    }
+  ]
+}
