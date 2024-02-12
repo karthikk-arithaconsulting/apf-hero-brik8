@@ -185,7 +185,9 @@
           "color": "",
           "weight": ""
         },
-        "backgroundColor": ""
+        "backgroundColor": "",
+        "height":"",
+        "width":""
       },
       "editable": true,
       "display": "block"

@@ -55,7 +55,7 @@
     "top-left top-right"
     "bottom-left bottom-right";
     gap: 300px;
-    grid-column-gap: 5px;   
+    /* grid-column-gap: 5px;    */
     /* padding-top: 20px; */
     /* padding-bottom: 20px; */
 }
