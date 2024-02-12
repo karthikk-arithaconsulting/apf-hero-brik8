@@ -55,6 +55,7 @@
     "top-left top-right"
     "bottom-left bottom-right";
     gap: 300px;
+    grid-column-gap: 5px;   
     /* padding-top: 20px; */
     /* padding-bottom: 20px; */
 }
@@ -110,12 +111,13 @@
   }
   
   .Hero-child-ImageOne,
-  .Hero-child-ImageTwo,
+  .Hero-child-ImageTwo{
+    animation: slideUp 2s ease-in-out forwards; /* Animation */
+  }
   .Hero-child-ImageThree,
   .Hero-child-ImageFour {
-    animation: slideUp 1.5s ease-in-out forwards; /* Animation */
+    animation: slideUp 1s ease-in-out forwards;
   }
-  
 
 @media  screen and (max-width:900px) {
     .Hero-Parent-Container{
