@@ -1,224 +1,214 @@
-.Hero-Parent-Container{
-    position: relative;
-    width: auto;
-    height: 700px;
-    /* border: 2px solid black; */
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
- 
-.Background-Image{
-    position: absolute;
-    width: 100%;
-    height:100%;
-    /* border: 2px solid black; */
-}
- 
-.Background-Image-Tag{
-    width: 100%;
-    height:100%;
-}
 
-.Hero-Parent-content{
-    position: absolute;
-    width: 70%;
-    display:flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.Hero-Button-div span{
-    margin-left: 5px;
-}
-
-.Hero-Title-div,
-.Hero-subText-div,
-.Hero-Button-div{
-    padding-left: 10%;
-}
-
-.Hero-Title-Tag,
-.Hero-Text-Tag,
-.Hero-Button-div{
-    display: flex;
-    justify-content:start;
-    text-align: start;
-}
-
-.Hero-child-Image{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-areas:
-    "top-left top-right"
-    "bottom-left bottom-right";
-    gap: 300px;
-    /* grid-column-gap: 5px;    */
-    /* padding-top: 20px; */
-    /* padding-bottom: 20px; */
-}
-.Hero-child-ImageOne, .Hero-child-ImageTwo, .Hero-child-ImageThree, .Hero-child-ImageFour{
-    border-radius: 10px;
-    width: 250px;
-    height: 150px;
-    justify-self: center;
-    align-self: center;
-}
-.Hero-child-ImageOne{
-    grid-area: top-left;
-}
-
-.Hero-child-ImageTwo{
-    grid-area: top-right;
-}
-
-.Hero-child-ImageThree{
-    grid-area: bottom-left;
-}
-.Hero-child-ImageFour{
-    grid-area: bottom-right;
-}
-
-
-@keyframes zoomin {
-    from {
-        transform: scale(0);
-        opacity: 0;
-    } 
-    to{
-        transform: scale(1);
-        opacity: 1;
-    }   
-}
-
-.Hero-Title-div ,
-.Hero-subText-div ,
-.Hero-Button-div{
-    animation: zoomin 1.5s ease-in-out forwards; /* Animation */
-}
-
-@keyframes slideUp {
-    from {
-      transform: translateY(100%); /* Start at the bottom */
-      opacity: 1; /* Initial opacity */
-    }
-    to {
-      transform: translateY(0); /* Slide up to the original position */
-      opacity: 1; /* Final opacity */
-    }
-  }
-  
-  .Hero-child-ImageOne,
-  .Hero-child-ImageTwo{
-    animation: slideUp 2s ease-in-out forwards; /* Animation */
-  }
-  .Hero-child-ImageThree,
-  .Hero-child-ImageFour {
-    animation: slideUp 1s ease-in-out forwards;
-  }
-
-@media  screen and (max-width:900px) {
-    .Hero-Parent-Container{
+/* Styles for desktops */
+@media screen and (min-width: 1025px) {
+    .brik-Container{
+        width:auto;
+        min-height: 660px;
         position: relative;
-        width: auto;
-        height: 700px;
-        border: 2px solid black;
-        display:flex;
+    }
+    .backgroundImage{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .backgroundImageTag{
+        width: 100%;
+        height: 100%;
+    }
+    .brik-body{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-right: 120px;
+        padding-left: 120px;
+    }
+    .section-1{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-right:30px;
+        gap: 20px;
+        padding-top: 40px;
+    }
+    .title-div{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
     }
-    .Hero-child-Image{
-        position: absolute;
+    .titleTag{
+        text-align: start;
+    }
+    .subtext-1-div{
+    }
+    .sub-1-Text-div{
+        text-align: justify;
+    }
+    .subtext-2-div{
+    }
+    .sub-2-Text-div{
+        text-align: justify;
+    }
+    .section-2{
+        width: 50%;
+        height: 100%;
+        margin-left:30px;
+        border-radius: 20px;
+    }
+    .Brik-image-container{
         width: 100%;
         height: 100%;
-        /* display: grid;
-        grid-template-areas:
-        "top-left top-right"
-        "bottom-left bottom-right"; */
-        /* gap: 150px; */
-        /* padding-top: 20px; */
-        /* padding-bottom: 20px; */
+        padding-bottom: 50px;
+        padding-top: 50px;
     }
-    .Hero-child-Image{
-        position: absolute;
+    .BrikImageDiv{
         width: 100%;
         height: 100%;
-        display: grid;
-        grid-template-areas:
-        "top-left top-right"
-        "bottom-left bottom-right";
-        gap: 300px;
-        grid-column-gap: 5px;   
-        /* padding-top: 20px; */
-        /* padding-bottom: 20px; */
+        border-radius: 20px;
     }
-    .Hero-child-ImageOne, .Hero-child-ImageTwo, .Hero-child-ImageThree, .Hero-child-ImageFour{
-        border-radius: 10px;
-        width: 250px;
-        height: 150px;
-        justify-self: center;
-        align-self: center;
-    }
-    .Hero-child-ImageOne{
-        grid-area: top-left;
-    }
-    
-    .Hero-child-ImageTwo{
-        grid-area: top-right;
-    }
-    
-    .Hero-child-ImageThree{
-        grid-area: bottom-left;
-    }
-    .Hero-child-ImageFour{
-        grid-area: bottom-right;
-    }
-    .Hero-Parent-content{
-        position: absolute;
-        width: 82%;
-        display:flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
 }
 
-@media screen and (min-width:310px) and (max-width:532px) {
-    .Hero-Parent-Container{
+
+
+/* tablet */
+@media  screen and (min-width: 769px) and (max-width: 1024px) {
+    .brik-Container{
+        width:auto;
+        min-height: 660px;
         position: relative;
-        width: auto;
-        height: 800px;
-        /* border: 2px solid black; */
-        display:flex;
+    }
+    .backgroundImage{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .backgroundImageTag{
+        width: 100%;
+        height: 100%;
+    }
+    .brik-body{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+    .section-1{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-right:20px;
+        gap: 20px;
+        padding-top: 40px;
+    }
+    .title-div{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
     }
-    .Hero-Parent-content{
-        position: absolute;
-        width: 90%;
-        display:flex;
-        flex-direction: column;
-        gap: 5px;
+    .titleTag{
+        text-align: start;
     }
-    .Hero-child-Image{
+    /* .subtext-1-div{
+    } */
+    .sub-1-Text-div{
+        text-align: justify;
+    }
+    /* .subtext-2-div{
+    } */
+    .sub-2-Text-div{
+        text-align: justify;
+    }
+    .section-2{
+        width: 50%;
+        height: 100%;
+        margin-left:10px;
+        border-radius: 20px;
+    }
+    .Brik-image-container{
+        width: 100%;
+        height: 100%;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    .BrikImageDiv{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px){
+    .brik-Container{
+        width:auto;
+        min-height: 100vh;
+        position: relative;
+    }
+    .backgroundImage{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .backgroundImageTag{
+        width: 100%;
+        height: 100%;
+    }
+    .brik-body{
         position: absolute;
         width: 100%;
         height: 100%;
-        display: grid;
-        grid-template-areas:
-        "top-left top-right"
-        "bottom-left bottom-right";
-        gap: 300px;
-        grid-column-gap: 5px;   
-        /* padding-top: 20px; */
-        /* padding-bottom: 20px; */
+        display: flex;
+        flex-direction: column;
+        padding-right: 40px;
+        padding-left: 40px;
     }
-    .Hero-child-ImageOne, .Hero-child-ImageTwo, .Hero-child-ImageThree, .Hero-child-ImageFour{
-        border-radius: 10px;
-        width: 200px;
-        height: 150px;
-        justify-self: center;
+    .section-1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 40px;
+    }
+    .title-div{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .titleTag{
+        text-align: start;
+    }
+    .sub-1-Text-div{
+        text-align: justify;
+    }
+    .sub-2-Text-div{
+        text-align: justify;
+    }
+    .section-2{
+        width: 100%;
+        height: 50%;
+    }
+    .Brik-image-container{
+        width: 100%;
+        height: 100%;
+        padding-bottom: 50px;
+        padding-top: 20px;
+    }
+    .BrikImageDiv{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
     }
 }

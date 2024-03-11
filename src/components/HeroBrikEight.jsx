@@ -1,47 +1,79 @@
 /* eslint-disable react/prop-types */
-import {Title,Text,Button} from "@apf/core";
+import {Title,Text} from "@apf/core";
 import React from "react";
 import "./HeroBrikEight.css";
 import "@apf/core/dist/style.css";
 
-
-
-
 function HeroBrikEight(props){
-    const BackgroundImage = props?.data?.data?.find(item => item?.content?.type === "img" && item?.content?.for ==="background");
-    // const imageTwoObject = props.data.data.find(item => item.content.type === "image" && item.content.for ==="subImage");
-    const titleObject = props.data.data.find(item => item.content.type === "title" && item.content.for === "mainTitle");
-    const textObject = props.data.data.find(item => item.content.type === "subtext" && item.content.for ==="subText");
-    // const textTwoObject = props.data.data.find(item => item.content.type === "text" && item.content.for ==="mainText");
-    const buttonObject = props.data.data.find(item => item.content.type === "button");
+    const backgroundImage = props.data.data.find(item => item?.content?.type === "img" && item?.content?.for === "background Image");
+    const brikImg = props.data.data.find(item => item?.content?.type === "img" && item?.content?.for === "brikImg");
+    const mainTitle = props.data.data.find(item => item?.content?.type === "title" && item?.content?.for === "main title");
+    const subTextOne = props.data.data.find(item => item?.content?.type === "subtext" && item?.content?.for === "sub textOne");
+    const subTextTwo = props.data.data.find(item => item?.content?.type === "subtext" && item?.content?.for === "sub textTwo");
 
-    const imageTopLeft = props?.data?.data?.find(item => item?.content?.type === "img" && item?.content?.for === "imageTopLeft");
-    const imageTopRight = props?.data?.data?.find(item => item?.content?.type === "img" && item?.content?.for === "imageTopRight");
-    const imageBottomLeft = props?.data?.data?.find(item => item?.content?.type === "img" && item?.content?.for === "imageBottomLeft");
-    const imageBottomRight = props?.data?.data?.find(item => item?.content?.type === "img" && item?.content?.for === "imageBottomRight");
     return(
-        <div className="Hero-Parent-Container">
-            <div className="Background-Image">
-                <img src={BackgroundImage?.content?.src} className="Background-Image-Tag"></img>
-            </div>  
-            <div className="Hero-child-Image">
-                <img src={imageTopLeft?.content?.src} className="Hero-child-ImageOne"></img>
-                <img src={imageTopRight?.content?.src} className="Hero-child-ImageTwo"></img>
-                <img src={imageBottomLeft?.content?.src} className="Hero-child-ImageThree"></img>
-                <img src={imageBottomRight?.content?.src} className="Hero-child-ImageFour"></img>
-            </div>
-            <div className="Hero-Parent-content">
-                <div className="Hero-Title-div">
-                    <Title c={titleObject.style.font.color} fz={titleObject.style.font.size} fw={titleObject.style.font.weight} style={{ fontFamily: titleObject.style.font.family }} fs={titleObject.style.font.style} className="Hero-Title-Tag">{titleObject.content.value}</Title> 
+        <div className="brik-Container">
+            <div className="backgroundImage">
+                {backgroundImage &&
+                backgroundImage.content.src &&
+                backgroundImage?.display === "block" && (
+                    <img
+                    src={backgroundImage.content.src}
+                    className="backgroundImageTag"
+                    ></img>
+                )}
                 </div>
-                <div className="Hero-subText-div">
-                    <Text c={textObject.style.font.color} fz={textObject.style.font.size} style={{ fontFamily: textObject.style.font.family }} fs={textObject.style.font.style} fw={textObject.style.font.weight} className="Hero-Text-Tag">{textObject.content.value}</Text>
+                <div className="brik-body">
+                    <div className="section-1">
+                    {mainTitle && mainTitle?.display === "block" && (
+                            <div className="title-div">
+                                <Title
+                                    c={mainTitle?.style?.font?.color}
+                                    fz={mainTitle?.style?.font?.size}
+                                    style={{ fontFamily: mainTitle?.style?.font?.family }}
+                                    fw={mainTitle?.style?.font?.weight}
+                                    className="titleTag"
+                                >
+                                    {mainTitle?.content?.value}
+                                </Title>
+                            </div>
+                        )}
+                        {subTextOne && subTextOne?.display === "block" && (
+                                    <div className="subtext-1-div">
+                                        <Text
+                                        c={subTextOne?.style?.font.color}
+                                        fz={subTextOne?.style?.font?.size}
+                                        style={{ fontFamily: subTextOne?.style?.font?.family }}
+                                        fs={subTextOne?.style?.font?.style}
+                                        fw={subTextOne?.style?.font?.weight}
+                                        className="sub-1-Text-div"
+                                        >
+                                        {subTextOne?.content?.value}
+                                        </Text>
+                                    </div>
+                            )}
+                            {subTextTwo && subTextTwo?.display === "block" && (
+                                    <div className="subtext-2-div">
+                                        <Text
+                                        c={subTextTwo?.style?.font.color}
+                                        fz={subTextTwo?.style?.font?.size}
+                                        style={{ fontFamily: subTextTwo?.style?.font?.family }}
+                                        fs={subTextTwo?.style?.font?.style}
+                                        fw={subTextTwo?.style?.font?.weight}
+                                        className="sub-2-Text-div"
+                                        >
+                                        {subTextTwo?.content?.value}
+                                        </Text>
+                                    </div>
+                            )}
+
+                    </div>
+                    <div className="section-2">
+                    {brikImg && brikImg?.display === "block" &&<div className="Brik-image-container" >
+                                <img src={brikImg?.content?.src}  className="BrikImageDiv"></img>
+                            </div>}
+                    </div>
                 </div>
-                <div className="Hero-Button-div">
-                    <Button style={{ color: buttonObject.style.font.color, backgroundColor: buttonObject.style.backgroundColor ,fontFamily: buttonObject.style.font.family}}  size={buttonObject.style.font.size} variant="outline" color="white" radius={buttonObject.style.radius}  className="Hero-Button-Tag">{buttonObject.content.value}<span>&rarr;</span></Button>
-                </div>
-            </div>
-           
         </div>
     );
 }
