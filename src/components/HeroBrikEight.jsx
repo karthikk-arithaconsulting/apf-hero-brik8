@@ -5,20 +5,20 @@ import "./HeroBrikEight.css";
 import "@apf/core/dist/style.css";
 
 function HeroBrikEight(props){
-    const backgroundImage = props.data.data.find(item => item?.content?.type === "img" && item?.content?.for === "background Image");
-    const brikImg = props.data.data.find(item => item?.content?.type === "img" && item?.content?.for === "brikImg");
-    const mainTitle = props.data.data.find(item => item?.content?.type === "title" && item?.content?.for === "main title");
-    const subTextOne = props.data.data.find(item => item?.content?.type === "subtext" && item?.content?.for === "sub textOne");
-    const subTextTwo = props.data.data.find(item => item?.content?.type === "subtext" && item?.content?.for === "sub textTwo");
+    const backgroundImage = props?.data?.data?.find(item => item?.content?.type === "img" && item?.content?.for === "background Image");
+    const brikImg = props?.data?.data?.find(item => item?.content?.type === "img" && item?.content?.for === "brikImg");
+    const mainTitle = props?.data?.data?.find(item => item?.content?.type === "title" && item?.content?.for === "main title");
+    const subTextOne = props?.data?.data?.find(item => item?.content?.type === "subtext" && item?.content?.for === "sub textOne");
+    const subTextTwo = props?.data?.data?.find(item => item?.content?.type === "subtext" && item?.content?.for === "sub textTwo");
 
     return(
-        <div className="brik-Container">
+        <div className="brik-Container" style={{backgroundColor: props?.data?.style?.backgroundColor, height: props?.data?.style?.height}}>
             <div className="backgroundImage">
                 {backgroundImage &&
-                backgroundImage.content.src &&
+                backgroundImage?.content?.src &&
                 backgroundImage?.display === "block" && (
                     <img
-                    src={backgroundImage.content.src}
+                    src={backgroundImage?.content?.src}
                     className="backgroundImageTag"
                     ></img>
                 )}
