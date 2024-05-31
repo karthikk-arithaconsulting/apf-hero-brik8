@@ -3,9 +3,9 @@
   "prePublish": [
     "npm run eslint"
   ],
-  "author": "chethan <chethan.m@arithaconsulting.com>",
+  "author": "karthik.k <karthik.k@arithaconsulting.com>",
   "brikId": "@apf/brik-hero-eight",
   "brikName": "brik-hero-eight",
   "published": true,
-  "version": "1.0.2"
+  "version": "1.0.3"
 }
