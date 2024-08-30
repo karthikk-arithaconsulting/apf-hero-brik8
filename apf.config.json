@@ -7,5 +7,10 @@
   "brikId": "@apf/brik-hero-eight",
   "brikName": "brik-hero-eight",
   "published": true,
-  "version": "1.0.3"
+  "version": "1.0.7",
+  "build": {
+    "include": [
+      "./src/data/newData.json"
+    ]
+  }
 }

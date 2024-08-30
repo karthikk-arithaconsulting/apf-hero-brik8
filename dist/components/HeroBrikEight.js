@@ -1,27 +1,39 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+/* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable react/prop-types */
-import { Title, Text } from "@apf/core";
-import React from "react";
-import "./HeroBrikEight.css";
-import "@apf/core/dist/style.css";
+var core_1 = require("@apf/core");
+// import React from "react";
+require("./HeroBrikEight.css");
+require("@apf/core/dist/style.css");
 function HeroBrikEight(props) {
-    const backgroundImage = props?.data?.data?.find(item => item?.content?.type === "img" && item?.content?.for === "background Image");
-    const brikImg = props?.data?.data?.find(item => item?.content?.type === "img" && item?.content?.for === "brikImg");
-    const mainTitle = props?.data?.data?.find(item => item?.content?.type === "title" && item?.content?.for === "main title");
-    const subTextOne = props?.data?.data?.find(item => item?.content?.type === "subtext" && item?.content?.for === "sub textOne");
-    const subTextTwo = props?.data?.data?.find(item => item?.content?.type === "subtext" && item?.content?.for === "sub textTwo");
-    return (React.createElement("div", { className: "brik-Container", style: { backgroundColor: props?.data?.style?.backgroundColor, height: props?.data?.style?.height } },
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, _20, _21;
+    var backgroundImage = (_b = (_a = props === null || props === void 0 ? void 0 : props.data) === null || _a === void 0 ? void 0 : _a.data) === null || _b === void 0 ? void 0 : _b.find(function (item) {
+        var _a, _b;
+        return ((_a = item === null || item === void 0 ? void 0 : item.content) === null || _a === void 0 ? void 0 : _a.type) === "img" &&
+            ((_b = item === null || item === void 0 ? void 0 : item.content) === null || _b === void 0 ? void 0 : _b.for) === "background Image";
+    });
+    var brikImg = (_d = (_c = props === null || props === void 0 ? void 0 : props.data) === null || _c === void 0 ? void 0 : _c.data) === null || _d === void 0 ? void 0 : _d.find(function (item) { var _a, _b; return ((_a = item === null || item === void 0 ? void 0 : item.content) === null || _a === void 0 ? void 0 : _a.type) === "img" && ((_b = item === null || item === void 0 ? void 0 : item.content) === null || _b === void 0 ? void 0 : _b.for) === "brikImg"; });
+    var mainTitle = (_f = (_e = props === null || props === void 0 ? void 0 : props.data) === null || _e === void 0 ? void 0 : _e.data) === null || _f === void 0 ? void 0 : _f.find(function (item) { var _a, _b; return ((_a = item === null || item === void 0 ? void 0 : item.content) === null || _a === void 0 ? void 0 : _a.type) === "title" && ((_b = item === null || item === void 0 ? void 0 : item.content) === null || _b === void 0 ? void 0 : _b.for) === "main title"; });
+    var subTextOne = (_h = (_g = props === null || props === void 0 ? void 0 : props.data) === null || _g === void 0 ? void 0 : _g.data) === null || _h === void 0 ? void 0 : _h.find(function (item) { var _a, _b; return ((_a = item === null || item === void 0 ? void 0 : item.content) === null || _a === void 0 ? void 0 : _a.type) === "subtext" && ((_b = item === null || item === void 0 ? void 0 : item.content) === null || _b === void 0 ? void 0 : _b.for) === "sub textOne"; });
+    var subTextTwo = (_k = (_j = props === null || props === void 0 ? void 0 : props.data) === null || _j === void 0 ? void 0 : _j.data) === null || _k === void 0 ? void 0 : _k.find(function (item) { var _a, _b; return ((_a = item === null || item === void 0 ? void 0 : item.content) === null || _a === void 0 ? void 0 : _a.type) === "subtext" && ((_b = item === null || item === void 0 ? void 0 : item.content) === null || _b === void 0 ? void 0 : _b.for) === "sub textTwo"; });
+    return (React.createElement("div", { className: "brik-Container", style: {
+            backgroundColor: (_m = (_l = props === null || props === void 0 ? void 0 : props.data) === null || _l === void 0 ? void 0 : _l.style) === null || _m === void 0 ? void 0 : _m.backgroundColor,
+            height: (_p = (_o = props === null || props === void 0 ? void 0 : props.data) === null || _o === void 0 ? void 0 : _o.style) === null || _p === void 0 ? void 0 : _p.height,
+        } },
         React.createElement("div", { className: "backgroundImage" }, backgroundImage &&
-            backgroundImage?.content?.src &&
-            backgroundImage?.display === "block" && (React.createElement("img", { src: backgroundImage?.content?.src, className: "backgroundImageTag" }))),
+            ((_q = backgroundImage === null || backgroundImage === void 0 ? void 0 : backgroundImage.content) === null || _q === void 0 ? void 0 : _q.src) &&
+            (backgroundImage === null || backgroundImage === void 0 ? void 0 : backgroundImage.display) === "block" && (React.createElement("img", { src: (_r = backgroundImage === null || backgroundImage === void 0 ? void 0 : backgroundImage.content) === null || _r === void 0 ? void 0 : _r.src, alt: "", className: "backgroundImageTag" }))),
         React.createElement("div", { className: "brik-body" },
             React.createElement("div", { className: "section-1" },
-                mainTitle && mainTitle?.display === "block" && (React.createElement("div", { className: "title-div" },
-                    React.createElement(Title, { c: mainTitle?.style?.font?.color, fz: mainTitle?.style?.font?.size, style: { fontFamily: mainTitle?.style?.font?.family }, fw: mainTitle?.style?.font?.weight, className: "titleTag" }, mainTitle?.content?.value))),
-                subTextOne && subTextOne?.display === "block" && (React.createElement("div", { className: "subtext-1-div" },
-                    React.createElement(Text, { c: subTextOne?.style?.font.color, fz: subTextOne?.style?.font?.size, style: { fontFamily: subTextOne?.style?.font?.family }, fs: subTextOne?.style?.font?.style, fw: subTextOne?.style?.font?.weight, className: "sub-1-Text-div" }, subTextOne?.content?.value))),
-                subTextTwo && subTextTwo?.display === "block" && (React.createElement("div", { className: "subtext-2-div" },
-                    React.createElement(Text, { c: subTextTwo?.style?.font.color, fz: subTextTwo?.style?.font?.size, style: { fontFamily: subTextTwo?.style?.font?.family }, fs: subTextTwo?.style?.font?.style, fw: subTextTwo?.style?.font?.weight, className: "sub-2-Text-div" }, subTextTwo?.content?.value)))),
-            React.createElement("div", { className: "section-2" }, brikImg && brikImg?.display === "block" && React.createElement("div", { className: "Brik-image-container" },
-                React.createElement("img", { src: brikImg?.content?.src, className: "BrikImageDiv" }))))));
+                mainTitle && (mainTitle === null || mainTitle === void 0 ? void 0 : mainTitle.display) === "block" && (React.createElement("div", { className: "title-div" },
+                    React.createElement(core_1.Title, { c: (_t = (_s = mainTitle === null || mainTitle === void 0 ? void 0 : mainTitle.style) === null || _s === void 0 ? void 0 : _s.font) === null || _t === void 0 ? void 0 : _t.color, fz: (_v = (_u = mainTitle === null || mainTitle === void 0 ? void 0 : mainTitle.style) === null || _u === void 0 ? void 0 : _u.font) === null || _v === void 0 ? void 0 : _v.size, style: { fontFamily: (_x = (_w = mainTitle === null || mainTitle === void 0 ? void 0 : mainTitle.style) === null || _w === void 0 ? void 0 : _w.font) === null || _x === void 0 ? void 0 : _x.family }, fw: (_z = (_y = mainTitle === null || mainTitle === void 0 ? void 0 : mainTitle.style) === null || _y === void 0 ? void 0 : _y.font) === null || _z === void 0 ? void 0 : _z.weight, className: "titleTag" }, (_0 = mainTitle === null || mainTitle === void 0 ? void 0 : mainTitle.content) === null || _0 === void 0 ? void 0 : _0.value))),
+                subTextOne && (subTextOne === null || subTextOne === void 0 ? void 0 : subTextOne.display) === "block" && (React.createElement("div", { className: "subtext-1-div" },
+                    React.createElement(core_1.Text, { c: (_1 = subTextOne === null || subTextOne === void 0 ? void 0 : subTextOne.style) === null || _1 === void 0 ? void 0 : _1.font.color, fz: (_3 = (_2 = subTextOne === null || subTextOne === void 0 ? void 0 : subTextOne.style) === null || _2 === void 0 ? void 0 : _2.font) === null || _3 === void 0 ? void 0 : _3.size, style: { fontFamily: (_5 = (_4 = subTextOne === null || subTextOne === void 0 ? void 0 : subTextOne.style) === null || _4 === void 0 ? void 0 : _4.font) === null || _5 === void 0 ? void 0 : _5.family }, fs: (_7 = (_6 = subTextOne === null || subTextOne === void 0 ? void 0 : subTextOne.style) === null || _6 === void 0 ? void 0 : _6.font) === null || _7 === void 0 ? void 0 : _7.style, fw: (_9 = (_8 = subTextOne === null || subTextOne === void 0 ? void 0 : subTextOne.style) === null || _8 === void 0 ? void 0 : _8.font) === null || _9 === void 0 ? void 0 : _9.weight, className: "sub-1-Text-div" }, (_10 = subTextOne === null || subTextOne === void 0 ? void 0 : subTextOne.content) === null || _10 === void 0 ? void 0 : _10.value))),
+                subTextTwo && (subTextTwo === null || subTextTwo === void 0 ? void 0 : subTextTwo.display) === "block" && (React.createElement("div", { className: "subtext-2-div" },
+                    React.createElement(core_1.Text, { c: (_11 = subTextTwo === null || subTextTwo === void 0 ? void 0 : subTextTwo.style) === null || _11 === void 0 ? void 0 : _11.font.color, fz: (_13 = (_12 = subTextTwo === null || subTextTwo === void 0 ? void 0 : subTextTwo.style) === null || _12 === void 0 ? void 0 : _12.font) === null || _13 === void 0 ? void 0 : _13.size, style: { fontFamily: (_15 = (_14 = subTextTwo === null || subTextTwo === void 0 ? void 0 : subTextTwo.style) === null || _14 === void 0 ? void 0 : _14.font) === null || _15 === void 0 ? void 0 : _15.family }, fs: (_17 = (_16 = subTextTwo === null || subTextTwo === void 0 ? void 0 : subTextTwo.style) === null || _16 === void 0 ? void 0 : _16.font) === null || _17 === void 0 ? void 0 : _17.style, fw: (_19 = (_18 = subTextTwo === null || subTextTwo === void 0 ? void 0 : subTextTwo.style) === null || _18 === void 0 ? void 0 : _18.font) === null || _19 === void 0 ? void 0 : _19.weight, className: "sub-2-Text-div" }, (_20 = subTextTwo === null || subTextTwo === void 0 ? void 0 : subTextTwo.content) === null || _20 === void 0 ? void 0 : _20.value)))),
+            React.createElement("div", { className: "section-2" }, brikImg && (brikImg === null || brikImg === void 0 ? void 0 : brikImg.display) === "block" && (React.createElement("div", { className: "Brik-image-container" },
+                React.createElement("img", { src: (_21 = brikImg === null || brikImg === void 0 ? void 0 : brikImg.content) === null || _21 === void 0 ? void 0 : _21.src, alt: "", className: "BrikImageDiv" })))))));
 }
-export default HeroBrikEight;
+exports.default = HeroBrikEight;
+//# sourceMappingURL=HeroBrikEight.js.map
